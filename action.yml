@@ -13,7 +13,7 @@ inputs:
     default: "schema"
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://ghcr.io/lemyst/xmllint-action:master'
   args:
     - ${{ inputs.xml-file }}
     - ${{ inputs.xml-schema-type }}
